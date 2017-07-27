@@ -11,7 +11,7 @@ Personal resources for the FOSS4G 2017 in Boston, USA.
 
 ## Thanks
 
-This repo makes use of the [reveal.js HTML presentation framework](http://lab.hakim.se/reveal-js/) which is licensed under the MIT-license.
+This repository makes use of the [reveal.js HTML presentation framework](http://lab.hakim.se/reveal-js/) which is licensed under the [MIT-license](https://github.com/hakimel/reveal.js/blob/master/LICENSE).
 
 
 ## License
