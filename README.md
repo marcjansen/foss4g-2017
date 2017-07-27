@@ -9,11 +9,13 @@ Personal resources for the FOSS4G 2017 in Boston, USA.
     * [PDF export](https://rawgit.com/marcjansen/foss4g-2017/master/slides.pdf)
 
 
-## License ![CC BY-SA 4.0](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
-
-This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
-
-
 ## Thanks
 
 This repo makes use of the [reveal.js HTML presentation framework](http://lab.hakim.se/reveal-js/) which is licensed under the MIT-license.
+
+
+## License
+
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
+
+![CC BY-SA 4.0](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
