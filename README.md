@@ -2,18 +2,16 @@
 
 Personal resources for the FOSS4G 2017 in Boston, USA.
 
+
 ## Resources
   * "AnOl, GeoExt, MapStore 2, ngeo, &ldots; &mdash; An overview of extensions, plugins, libraries &amp; frameworks around OpenLayers"
     * [HTML Slides](https://rawgit.com/marcjansen/foss4g-2017/master/index.html)
     * [PDF export](https://rawgit.com/marcjansen/foss4g-2017/master/slides.pdf)
 
-## License
 
-<img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" alt="CC BY-SA 4.0" style="float: right"/>
+## License ![CC BY-SA 4.0](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
-
-<span style="clear: both;"></span>
 
 
 ## Thanks
