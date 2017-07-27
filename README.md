@@ -9,13 +9,10 @@ Personal resources for the FOSS4G 2017 in Boston, USA.
 
 ## License
 
-<div style="float: right;">
 ![CC BY-SA 4.0](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
-</div>
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
 
-<span style="clear: both;"></span>
 
 ## Thanks
 
