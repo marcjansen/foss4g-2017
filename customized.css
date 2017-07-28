@@ -162,10 +162,20 @@ span.nope {
   width: 33%
 }
 
-.reveal section img.sideimage {
+.reveal section .sidecontent {
+  float: left;
+  width: 65%
+}
+.reveal section .sideadditional {
   float: right;
-  clear: right;
   width: 25%
+}
+.reveal section div.meta {
+  font-style: italic;
+  font-size: 0.4em;
+  padding-top: 2em;
+  clear: both;
+  text-align: right;
 }
 .reveal section.author ul {
   /*max-width: 70%;*/
