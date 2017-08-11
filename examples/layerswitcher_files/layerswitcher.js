@@ -1,44 +1,46 @@
 (function() {
-    var map = new ol.Map({
-        target: 'map',
+    var basemaps = new ol.layer.Group({
+        'title': 'Base maps',
         layers: [
             new ol.layer.Group({
-                'title': 'Base maps',
+                title: 'Water color with labels',
+                type: 'base',
+                combine: true,
+                visible: false,
                 layers: [
-                    new ol.layer.Group({
-                        title: 'Water color with labels',
-                        type: 'base',
-                        combine: true,
-                        visible: false,
-                        layers: [
-                            new ol.layer.Tile({
-                                source: new ol.source.Stamen({
-                                    layer: 'watercolor'
-                                })
-                            }),
-                            new ol.layer.Tile({
-                                source: new ol.source.Stamen({
-                                    layer: 'terrain-labels'
-                                })
-                            })
-                        ]
-                    }),
                     new ol.layer.Tile({
-                        title: 'Water color',
-                        type: 'base',
-                        visible: false,
                         source: new ol.source.Stamen({
                             layer: 'watercolor'
                         })
                     }),
                     new ol.layer.Tile({
-                        title: 'OSM',
-                        type: 'base',
-                        visible: true,
-                        source: new ol.source.OSM()
+                        source: new ol.source.Stamen({
+                            layer: 'terrain-labels'
+                        })
                     })
                 ]
             }),
+            new ol.layer.Tile({
+                title: 'Water color',
+                type: 'base',
+                visible: false,
+                source: new ol.source.Stamen({
+                    layer: 'watercolor'
+                })
+            }),
+            new ol.layer.Tile({
+                title: 'OSM',
+                type: 'base',
+                visible: true,
+                source: new ol.source.OSM()
+            })
+        ]
+    });
+
+    var map = new ol.Map({
+        target: 'map',
+        layers: [
+            basemaps,
             new ol.layer.Group({
                 title: 'Overlays',
                 layers: [
@@ -64,4 +66,15 @@
     });
     map.addControl(layerSwitcher);
 
+    map.once('singleclick', function() {
+        console.log('click');
+        var osmwms = new ol.layer.Tile({
+            title: 'OSM WMS by terrestris',
+            source: new ol.source.TileWMS({
+                url: 'https://ows.terrestris.de/osm/service',
+                params: {'LAYERS': 'OSM-WMS'}
+            })
+        });
+        basemaps.getLayers().push(osmwms);
+    })
 })();
